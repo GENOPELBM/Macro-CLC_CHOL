@@ -169,7 +169,7 @@ Sub Miseenpagevariant()
     Columns("C:C").ColumnWidth = 4
     Columns("D:D").ColumnWidth = 21
     Columns("E:E").ColumnWidth = 16
-    Columns("F:F").ColumnWidth = 3
+    Columns("F:F").ColumnWidth = 5
     Columns("G:G").ColumnWidth = 6.2
     Columns("H:H").ColumnWidth = 6.2
     Columns("I:I").ColumnWidth = 8.2
@@ -212,12 +212,12 @@ Sub Miseenpagevariant()
     Range("B1").Select
     Selection.ClearContents
     Range("K1").Select
-    ActiveCell.FormulaR1C1 = "CHOLV4"
+    ActiveCell.FormulaR1C1 = "HBOC V5"
     Range("M1").Select
     ActiveCell.FormulaR1C1 = "Fait par : "
     
 'mise en couleur de l'entète de la table en gris
-    Range("A3:T3").Select
+    Range("A3:U3").Select
     With Selection.Interior
         .Pattern = xlSolid
         .PatternColorIndex = xlAutomatic
@@ -366,11 +366,11 @@ Sub Miseenpagevariant()
 'macro CNV à adapter
     Rows("3:3").Select
     Selection.AutoFilter
-    ActiveSheet.Range("$A$3:$T$" & lastRow).AutoFilter Field:=13, Criteria1:=">1.4", _
-        Operator:=xlOr, Criteria2:="<-1.4"
+    ActiveSheet.Range("$A$3:$T$" & lastRow).AutoFilter Field:=14, Criteria1:=">=1.4", _
+        Operator:=xlOr, Criteria2:="<=-1.4"
         
     
-    Range("M4:M" & lastRow).Select
+    Range("N4:N" & lastRow).Select
     Selection.FormatConditions.Add Type:=xlCellValue, Operator:=xlLessEqual _
         , Formula1:="=-1,41"
     Selection.FormatConditions(Selection.FormatConditions.Count).SetFirstPriority
@@ -463,7 +463,7 @@ Sub Miseenpagevariant()
     Columns("G:G").ColumnWidth = 6.2
     Columns("H:H").ColumnWidth = 6.2
     Columns("I:I").ColumnWidth = 8.2
-    Columns("J:J").ColumnWidth = 6.5
+    Columns("J:J").ColumnWidth = 9
     Columns("K:K").ColumnWidth = 10
     Columns("L:L").ColumnWidth = 7
     Columns("M:M").ColumnWidth = 7
@@ -649,7 +649,7 @@ Sub Miseenpagevariant()
     Columns("C:C").ColumnWidth = 4
     Columns("D:D").ColumnWidth = 21
     Columns("E:E").ColumnWidth = 23
-    Columns("F:F").ColumnWidth = 3
+    Columns("F:F").ColumnWidth = 5
     Columns("G:G").ColumnWidth = 6.2
     Columns("H:H").ColumnWidth = 6.2
     Columns("I:I").ColumnWidth = 8.2
@@ -740,7 +740,7 @@ Sub Miseenpagevariant()
 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
     ' Vérifier la position des entêtes dans chaque feuille et colorier les cases en vert si pas d'erreur
-    If ThisWorkbook.Sheets("MergeCNV").Range("M3").Value = "Fold-change (adjusted)" Then
+    If ThisWorkbook.Sheets("MergeCNV").Range("N3").Value = "Fold-change (adjusted)" Then
         With ThisWorkbook.Sheets("Feuil1").Range("L16:L20").Interior
             .Pattern = xlSolid
             .PatternColorIndex = xlAutomatic
@@ -778,6 +778,6 @@ End Sub
 
 
 
-
-
-                                                                                                                                                                                 i#m  …¬µM  pÏÂµM                                                                  àBvÓM     %m  olÓM   ²®M                                                                                                  
+  X     @ÍØ@i  @7Oi  {.@iø  ˜¿z®­   ­à¾Wø  0jFi  dêVi  jFi  `–z®­           .@iø  ð&=-i     i                   Y u   G o t h i c   U I   S e m i l i g h t                          à     ^     @ÍØ@i  @7Oi  {.@iø  ˜¿z®­   ­à¾Wø  0jFi  dêVi  jFi  `–z®­           .@iø  ð&=-i     i                  
+  
+Cy p÷#9i  €‘D-i   ko 3 `à  (   g 3 `à 
